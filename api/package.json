@@ -1,9 +1,9 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "Azure Function for weather API",
   "scripts": {
     "start": "func start",
+    "build": "echo 'Building API' && npm install",
     "test": "echo \"No tests yet\" && exit 0"
   },
   "dependencies": {
