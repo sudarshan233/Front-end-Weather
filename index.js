@@ -1,3 +1,5 @@
+const API_BASE_URL = "/api"; 
+
 const searchForm = document.getElementById('searchForm');
 const cityInput = document.getElementById('cityInput');
 const errorMessage = document.getElementById('errorMessage');
