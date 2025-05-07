@@ -1,0 +1,35 @@
+{
+    "routes": [
+      {
+        "route": "/api/*",
+        "methods": ["GET"],
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/*",
+        "serve": "/index.html",
+        "statusCode": 200
+      }
+    ],
+    "navigationFallback": {
+      "rewrite": "/index.html",
+      "exclude": ["/api/*", "/assets/*"]
+    },
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/index.html",
+        "statusCode": 200
+      }
+    },
+    "mimeTypes": {
+      ".json": "application/json"
+    },
+    "apiLocation": "api",
+    "platformErrorOverrides": [
+      {
+        "errorType": "NotFound",
+        "serve": "/index.html",
+        "statusCode": 200
+      }
+    ]
+  }
