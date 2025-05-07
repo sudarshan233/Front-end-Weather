@@ -1,4 +1,4 @@
-const API_BASE_URL = "/api"; 
+const API_BASE_URL = window.location.origin + "/api";
 
 const searchForm = document.getElementById('searchForm');
 const cityInput = document.getElementById('cityInput');
